@@ -18,18 +18,30 @@ body {
         padding: 0;
 }
 
-main {
+main,
+nav,
+footer {
         max-width: 80ch;
         margin: 1em;
         font-family: var(--sans-serif);
         font-size: 1em;
+        font-weight: 500;
         text-align: justify;
         line-height: 1.5em;
         color: black;
 }
 
+.gap {
+        padding-right: 1em;
+}
+
 code {
         font-family: var(--mono-space);
+}
+
+a {
+        text-decoration: none;
+        color: blue;
 }
 
 .highlight {
@@ -54,7 +66,7 @@ img {
 hr {
         border: none;
         height: 1px;
-        background-color: darkgrey;
+        background-color: lightgray;
 }
 
 input {

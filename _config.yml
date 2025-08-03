@@ -3,7 +3,7 @@ email: rawxtl@outlook.com
 
 description: >-
         my personal site, blog, portfolio
-baseurl: "/"
+baseurl: ""
 url: "https://rawxtl.github.io"
 
 # Build settings
