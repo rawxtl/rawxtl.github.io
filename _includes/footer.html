@@ -1,0 +1,21 @@
+<footer>
+        <hr />
+        <p>socials</p>
+        <ul>
+                {% for link in site.data.socials %}
+                <li>
+                        <a href="{{ link.url | relative_url}}">
+                                {{ link.url }}</a
+                        >
+                </li>
+                {% endfor %}
+        </ul>
+        <p>contact</p>
+        <ul>
+                <li>
+                        <a href="mailto:rawxtl@outlook.com">
+                                rawxtl@outlook.com
+                        </a>
+                </li>
+        </ul>
+</footer>

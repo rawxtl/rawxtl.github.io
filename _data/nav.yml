@@ -1,0 +1,14 @@
+- name: Home
+  url: /
+
+- name: Blogs
+  url: /blogs/
+
+- name: Recommendations
+  url: /recommendations/
+
+- name: Gallery
+  url: /gallery/
+
+- name: About
+  url: /about/

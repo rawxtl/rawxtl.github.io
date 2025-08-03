@@ -1,0 +1,28 @@
+title: edwin dileep
+email: rawxtl@outlook.com
+
+description: >-
+        my personal site, blog, portfolio
+baseurl: ""
+url: "https://rawxtl.github.io"
+
+# Build settings
+plugins:
+        - jekyll-feed
+
+defaults:
+        - scope:
+                  path: "assets/img"
+          values:
+                  image: true
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
