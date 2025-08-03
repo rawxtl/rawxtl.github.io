@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+	font-family: "Roboto", sans-serif;
+	font-size: 0.9rem;
+	font-weight: 500;
+	letter-spacing: 0.03rem;
+	line-height: 1.28rem;
+
+	box-sizing: border-box;
+
+	background-color: #00000b;
+	color: whitesmoke;
+}
+
+p {
+	max-width: 80ch;
+}
+
+h1 {
+	letter-spacing: -0.02rem;
+}
+
+h5 {
+	letter-spacing: 0.05rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #d4b836;
+}
+
+ul {
+	list-style-type: circle;
+}
+
+a {
+	max-width: 80ch;
+
+	font-family: "Roboto Mono", monospace;
+	text-decoration: none;
+	color: #3f547f;
+}
+
+a:hover {
+	color: whitesmoke;
+	text-decoration: underline;
+}
+
+img {
+	max-width: 50vw;
+	max-height: 40vh;
+	width: auto;
+	height: auto;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+	img {
+		max-width: 80vw;
+	}
+}
+
+code {
+	font-family: "Roboto Mono", monospace;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	background-color: #3f547f;
+
+	background: repeating-linear-gradient(
+		to right,
+		#3f547f 0px,
+		#3f547f 2px,
+		transparent 2px,
+		transparent 8px
+	);
+}
