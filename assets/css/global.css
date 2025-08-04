@@ -5,10 +5,11 @@
         --sans-serif: "Inter", sans-serif, clean;
         --mono-space: "Google Sans Code", monospace, clean;
 
-        --foreground-clr: black;
+        --background-clr: black;
+        --foreground-clr: white;
 
-        --hyperlink-clr: blue;
-
+        --hyperlink-clr: #888;
+        --dim-clr: #888;
         box-sizing: content-box;
 
         -webkit-font-smoothing: antialiased;
@@ -19,6 +20,8 @@
 body {
         margin: 24vh 0 20vh 0;
         padding: 0;
+
+        background-color: var(--background-clr);
 }
 
 header,
@@ -37,6 +40,10 @@ footer {
         color: var(--foreground-clr);
 }
 
+li {
+        color: var(--foreground-clr);
+}
+
 code {
         font-family: var(--mono-space);
 }
@@ -44,6 +51,11 @@ code {
 a {
         text-decoration: none;
         color: var(--hyperlink-clr);
+}
+
+a:hover {
+        color: var(--foreground-clr);
+        text-decoration: underline;
 }
 
 img {
@@ -54,7 +66,7 @@ img {
 hr {
         border: none;
         height: 1px;
-        background-color: lightgray;
+        background-color: var(--dim-clr);
 }
 
 input {
@@ -106,7 +118,15 @@ blockquote {
 }
 
 .dim {
-        color: dimgrey;
+        color: var(--dim-clr);
+}
+
+.foregroundclr {
+        color: var(--foreground-clr);
+}
+
+.hyperlinkclr {
+        color: var(--hyperlink-clr);
 }
 
 .bright {
