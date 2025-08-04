@@ -1,5 +1,17 @@
 <footer>
         <hr />
+
+        {% if page.exurl != null %}
+        <p>Links</p>
+        <ul>
+                {% for link in page.exurl %}
+                <li>
+                        <a href="{{ link | relative_url}}"> {{ link }}</a>
+                </li>
+                {% endfor %}
+        </ul>
+        {% endif %}
+
         <p>socials</p>
         <ul>
                 {% for link in site.data.socials %}

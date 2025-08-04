@@ -1,6 +1,8 @@
 _site
 .sass-cache
 .jekyll-cache
+.ruby-lsp
 .jekyll-metadata
-Gemfile.lock
 vendor
+
+*.lock
