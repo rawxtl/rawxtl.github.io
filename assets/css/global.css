@@ -5,11 +5,15 @@
         --sans-serif: "Inter", sans-serif, clean;
         --mono-space: "Google Sans Code", monospace, clean;
 
+        --foreground-clr: black;
+
+        --hyperlink-clr: blue;
+
         box-sizing: content-box;
 
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        text-rendering: optimizeLegibility;
+        text-rendering: geometricPrecision;
 }
 
 body {
@@ -22,15 +26,15 @@ main,
 nav,
 footer {
         max-width: 80ch;
-        margin: 1em;
+        margin: 14px;
 
         font-family: var(--sans-serif);
-        font-size: 1em;
-        font-weight: 500;
+        font-size: 14px;
+        font-weight: 540;
         text-align: justify;
-        line-height: 1.5em;
+        line-height: 20px;
 
-        color: black;
+        color: var(--foreground-clr);
 }
 
 code {
@@ -39,7 +43,7 @@ code {
 
 a {
         text-decoration: none;
-        color: blue;
+        color: var(--hyperlink-clr);
 }
 
 img {
