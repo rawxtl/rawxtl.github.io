@@ -17,7 +17,7 @@
 }
 
 body {
-        margin: 10vh 0 40vh 0;
+        margin: 24vh 0 40vh 0;
         padding: 0;
 }
 
@@ -96,7 +96,7 @@ blockquote {
 }
 
 .gap {
-        padding-right: 1em;
+        padding-right: 14px;
 }
 
 .highlight {

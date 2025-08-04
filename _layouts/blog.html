@@ -19,7 +19,7 @@
                         <p class="dim">TL;DR - {{ page.tldr }}</p>
 
                         <p class="dim">
-                                <span class="gap">Date: {{ page.date }}</span>
+                                <span class="gap">Date: {{ page.date | date: "%Y-%m-%d" }}</span>
                                 <span class="gap">
                                         Credits: {{ page.credits }}
                                 </span>
@@ -27,7 +27,6 @@
                         <hr />
                 </header>
                 <main>{{content}}</main>
-                <br />
                 {% include nav.html %} {% include footer.html %}
         </body>
 </html>
