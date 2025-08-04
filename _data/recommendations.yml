@@ -1,0 +1,49 @@
+songs:
+ - name: cloudbursting
+   desc: by kate bush is one of my all time favorites. you'll be lost and dreaming
+   url: https://open.spotify.com/track/373vZ0g1dpWaUcrbh0WKhd
+
+ - name: wuthering heights
+   desc: by kate bush inspired from the novel wuthering heights wrote in 1847
+   url: https://open.spotify.com/track/5YSI1311X8t31PBjkBG4CZ
+
+ - name: power ballad
+   desc: by domo denesis, the alchemist, smoke dza
+   url: https://open.spotify.com/track/2KSQrAPhcHbICiz0f6M6hy
+
+ - name: gehraiyaan
+   desc: by oaff, savera, lothika is the title track for gehraiyaan by shakun batra
+   url: https://open.spotify.com/track/3Scr5BkANSFhLkONn5AmDM
+
+ - name: i wear my root like a medal
+   desc: by dhee talks about her struggles and her roots in india, tamil nadu
+   url: https://open.spotify.com/track/4jNBqvDq5wPhE93fqYMuj0
+
+ - name: nikamma
+   desc: by lifafa meaning useless
+   url: https://open.spotify.com/track/0yrCxEoGU4cV3CGr0sc65J
+
+ - name: darjeeling
+   desc: by fka wings feat.jora smit & unkown t talks about moving to london city
+   url: https://open.spotify.com/track/2roZnl5Sh8PAiLgqAgAyaS
+
+ - name: luka chuppi
+   desc: by a.r rahman, lata mangeshkar, sings about emotions between mother and her son
+   url: https://open.spotify.com/track/2roZnl5Sh8PAiLgqAgAyaS
+
+ - name: kaalam
+   desc: by pritt, dilushselva talks about there vulnerability they share, from the virality of unakkul naane
+   url: https://open.spotify.com/track/2DGWtU9bU2D4yMuMaI2H3Y
+
+movies:
+ - name: bramayugam
+   desc: directed by rahul sadasivan is a b&w movie in 2024, theming horror and folklore of kerala
+   url: https://www.imdb.com/title/tt27431598/
+
+ - name: triangle of sadness
+   desc: directed by ruben östlund, won palme d'or and 3 times oscar nominee
+   url: https://www.imdb.com/title/tt7322224/
+
+ - name: poor things
+   desc: directed yorgos lanthimos and written by tony mcnamara alasdair gray
+   url: https://www.imdb.com/title/tt14230458/

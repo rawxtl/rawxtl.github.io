@@ -17,7 +17,7 @@
 }
 
 body {
-        margin: 24vh 0 40vh 0;
+        margin: 24vh 0 20vh 0;
         padding: 0;
 }
 
@@ -47,8 +47,8 @@ a {
 }
 
 img {
-        max-width: 92vw;
-        max-height: 96vh;
+        min-width: 50vw;
+        max-width: 80vw;
 }
 
 hr {

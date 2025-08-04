@@ -6,13 +6,15 @@ permalink: /recommendations/
 
 **songs** 
 
-[cloudbursting](links) by kate bush is one of my all time favorites. you'll be lost and dreaming  
+{% for song in site.data.recommendations.songs %}
+[{{song.name}}]({{song.url}}) {{song.desc}}  {% endfor %}
 
 <br/>
 
 **movies**  
 
-[bramayugam](link) directed by rahul sadasivan is a b&w movie in 2024, theming horror and folklore of kerala
+{% for movie in site.data.recommendations.movies %}
+[{{movie.name}}]({{movie.url}}) {{movie.desc}}  {% endfor %}
 
 <br>
 <br>

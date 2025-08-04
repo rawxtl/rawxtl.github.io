@@ -4,6 +4,4 @@ title: gallery
 permalink: /gallery/
 ---
 
-{% for image in site.data.photography %}
-![{{ image.desc }}]( /assets/img/{{image.url}})
-{% endfor %}
+{% for img in site.data.photos.images %} ![shhh no alt mate. i made it so that it just dumps the asset file on this page with a for loop](/assets/img/{{img}}) {% endfor %}
