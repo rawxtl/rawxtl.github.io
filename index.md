@@ -12,4 +12,5 @@ my passion right now is to learn about film and make a good contribution. film i
 
 {% assign latest_blog = site.posts | first %}
 these are some artists i like listening to{% for artist in site.data.artists %}, [{{artist.name}}]({{artist.url}}){% endfor %}   
+
 checkout my stuff from the links below or read my latest blog -- [{{ latest_blog.title }}]({{ latest_blog.url }})

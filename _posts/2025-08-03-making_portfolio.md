@@ -2,7 +2,7 @@
 layout: blog
 title: making my first portfolio
 
-credits: Edwin Dileep
+credits: edwin dileep
 tldr: >-
   my first website, made using jekyll and github pages. an easy and straight forward process
   from development to deployment. i like the simplicity in jekyll, generating static html for simple

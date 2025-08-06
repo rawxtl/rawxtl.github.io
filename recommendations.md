@@ -7,20 +7,14 @@ permalink: /recommendations/
 **songs** 
 
 {% for song in site.data.recommendations.songs %}
-<a href="{{ song.url }}" class="foregroundclr">
-        {{ song.name }}
-</a>
-<span class="hyperlinkclr">{{ song.desc }}</span>  {% endfor %}  
+[{{song.name}}]({{song.url}}) {{song.desc}}  {%endfor%}
 
 <br/>
 
 **movies**  
 
 {% for movie in site.data.recommendations.movies %}
-<a href="{{ movie.url }}" class="foregroundclr">
-        {{ movie.name }}
-</a>
-<span class="hyperlinkclr">{{ movie.desc }}</span>  {% endfor %}  
+[{{movie.name}}]({{movie.url}}) {{movie.desc}}  {%endfor%}
 
 <br>
 <br>

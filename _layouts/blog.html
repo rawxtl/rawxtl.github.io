@@ -8,6 +8,11 @@
                 />
                 <title>{{page.title}}</title>
                 <link
+                        rel="shortcut icon"
+                        type="image/ico"
+                        href="/assets/img/favicon.ico"
+                />
+                <link
                         rel="stylesheet"
                         href="/assets/css/global.css"
                         type="text/css"
@@ -18,13 +23,13 @@
                         <h1>{{ page.title }}</h1>
                         <p>tl;dr -- <span class="dim">{{ page.tldr }}</span></p>
 
+                        {% assign date = page.date | date: "%B-%d-%Y" %}
                         <p class="dim">
-                                <span class="gap"
-                                        >Date: {{ page.date | date: "%Y-%m-%d"
-                                        }}</span
-                                >
                                 <span class="gap">
-                                        Credits: {{ page.credits }}
+                                        date: {{ date | downcase }}
+                                </span>
+                                <span class="gap">
+                                        credits: {{ page.credits }}
                                 </span>
                         </p>
                         <hr />

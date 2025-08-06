@@ -4,9 +4,11 @@ title: blogs
 permalink: /blogs/
 ---
 
-**BLOG POSTS**
+
+**blog posts**
 {% for post in site.posts %}
- - {{ post.date | date: "%Y-%m-%d" }} / [{{ post.title }}]({{ post.url }})
+{% assign date = post.date | date: "%B-%d-%Y" %}
+ - {{ date | downcase }} / [{{ post.title }}]({{ post.url }})
 {% endfor %}
 
 <br />
