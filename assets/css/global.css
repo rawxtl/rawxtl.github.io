@@ -1,20 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
 :root {
-        --sans-serif: "Inter", sans-serif, clean;
-        --mono-space: "Google Sans Code", monospace, clean;
+        --sans-serif: "Roboto", sans-serif;
+        --mono-space: "Source Code Pro", monospace;
 
-        --background-clr: #ffffff;
-        --foreground-clr: rgba(0, 0, 0, 0.96);
+        --background-clr: white;
+        --foreground-clr: black;
 
-        --hyperlink-clr: rgba(0, 0, 255, 0.86);
-        --dim-clr: rgba(0, 0, 0, 0.38);
+        --hyperlink-clr: blue;
+        --dim-clr: gray;
         box-sizing: border-box;
 
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-rendering: geometricPrecision;
+
+        scroll-behavior: smooth;
 }
 
 body {
@@ -28,25 +30,33 @@ nav,
 main,
 header,
 footer {
-        max-width: 76ch;
-        margin-left: 14px;
-        margin-right: 14px;
-
-        font-family: var(--sans-serif);
-        font-size: 14px;
-        font-weight: 540;
-        text-align: justify;
-        line-height: 20px;
+        margin-left: 4rem;
+        margin-right: 1rem;
 
         color: var(--foreground-clr);
+
+        font-family: var(--sans-serif);
+        font-weight: normal;
+        font-size: 1rem;
+
+        line-height: 1.3rem;
+        text-align: justify;
+        max-width: 80ch;
+}
+
+nav {
+        text-align: right;
 }
 
 @media (width <= 70ch) {
-        nav,
         main,
         header,
         footer {
                 text-align: left;
+        }
+
+        nav {
+                text-align: right;
         }
 }
 
@@ -55,37 +65,51 @@ li {
 }
 
 p {
-        margin-bottom: 1.5em;
+        margin-bottom: 1.5rem;
 }
 
 h5 {
-        font-size: 14px;
+        font-size: 1rem;
 }
 
 code {
         font-family: var(--mono-space);
+        font-size: 0.9rem;
+        font-weight: 500;
+
+        color: royalblue;
+}
+
+.highlight code {
+        color: black;
 }
 
 a {
-        text-decoration: none;
         color: var(--hyperlink-clr);
 }
 
 a:hover {
-        color: var(--foreground-clr);
-        text-decoration: underline;
+        background-color: var(--hyperlink-clr);
+        color: var(--background-clr);
+        text-decoration: none;
+}
+
+.gallery {
+        display: flex;
 }
 
 img {
-        min-width: 50vw;
-        max-width: 50vw;
+        max-height: 96vh;
+        padding: 0.5rem;
 }
 
-@media (width <= 800px) {
+@media (width <= 50em) {
+        .gallery {
+                display: block;
+        }
+
         img {
-                max-width: none;
-                min-width: none;
-                width: 100%;
+                max-width: 80vw;
         }
 }
 
@@ -107,13 +131,7 @@ blockquote {
 }
 
 .gap {
-        padding-right: 14px;
-}
-
-.highlight {
-        background-color: #eeeeee;
-        padding: 0.2em;
-        margin: 0.2em;
+        padding-right: 1em;
 }
 
 .dim {
@@ -124,6 +142,14 @@ blockquote {
         color: var(--foreground-clr);
 }
 
+.backgroundclr {
+        color: var(--background-clr);
+}
+
 .hyperlinkclr {
         color: var(--hyperlink-clr);
+}
+
+.blog-title-container {
+        text-align: right;
 }

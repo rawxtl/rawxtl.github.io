@@ -20,14 +20,14 @@
         </head>
         <body>
                 <header>
-                        <h1>{{ page.title }}</h1>
+                        <div class="blog-title-container">
+                                <h2>{{ page.title}}</h2>
+                        </div>
                         <p>tl;dr -- <span class="dim">{{ page.tldr }}</span></p>
 
-                        {% assign date = page.date | date: "%B-%d-%Y" %}
+                        {% assign date = page.date | date: "%d-%b-%Y" %}
                         <p class="dim">
-                                <span class="gap">
-                                        date: {{ date | downcase }}
-                                </span>
+                                <span class="gap"> date: {{ date }} </span>
                                 <span class="gap">
                                         by: {{ page.credits }}
                                 </span>
