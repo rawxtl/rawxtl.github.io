@@ -1,9 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-        --sans-serif: "Roboto", sans-serif;
+        --sans-serif: "Inter", sans-serif;
         --mono-space: "Source Code Pro", monospace;
+
+        font-feature-settings:
+                "calt",
+                "tnum",
+                "case",
+                "zero" 1;
+        font-variant-numeric: slashed-zero;
 
         --background-clr: white;
         --foreground-clr: black;
@@ -66,6 +73,10 @@ li {
 
 p {
         margin-bottom: 1.5rem;
+}
+
+li p {
+        margin: 0;
 }
 
 h5 {
