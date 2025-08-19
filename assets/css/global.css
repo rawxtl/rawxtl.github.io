@@ -12,10 +12,10 @@
                 "zero" 1;
         font-variant-numeric: slashed-zero;
 
-        --background-clr: white;
-        --foreground-clr: black;
+        --background-clr: black;
+        --foreground-clr: white;
 
-        --hyperlink-clr: blue;
+        --hyperlink-clr: white;
         --dim-clr: gray;
         box-sizing: border-box;
 
@@ -47,7 +47,9 @@ footer {
         font-size: 1rem;
 
         line-height: 1.3rem;
-        text-align: justify;
+        /*text-align: justify;*/
+        text-align: left;
+
         max-width: 80ch;
 }
 
@@ -88,11 +90,11 @@ code {
         font-size: 0.9rem;
         font-weight: 500;
 
-        color: royalblue;
+        color: gray;
 }
 
 .highlight code {
-        color: black;
+        color: var(--foreground-clr);
 }
 
 a {
