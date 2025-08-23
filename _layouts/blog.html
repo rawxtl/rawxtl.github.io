@@ -20,15 +20,15 @@
         </head>
         <body>
                 {% include nav.html %}
+                <br />
                 <header>
                         {% assign date = page.date | date: "%d-%b-%Y" %}
-                        <div class="blog-title-container">
-                                <h2>
-                                        <span class="gap dim">{{date}}</span>
-                                        / {{page.title}}
-                                </h2>
-                        </div>
+                        <h2>
+                                <span class="gap dim">{{date}}</span>
+                                / {{page.title}}
+                        </h2>
                 </header>
+                <br />
                 <main>
                         <article>{{content}}</article>
                 </main>

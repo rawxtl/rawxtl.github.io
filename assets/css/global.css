@@ -71,6 +71,7 @@ h3 {
 }
 
 code {
+        font-weight: 500;
         font-family: var(--mono-space);
 }
 
@@ -137,8 +138,4 @@ blockquote {
 
 .hyperlinkclr {
         color: var(--hyperlink-clr);
-}
-
-.blog-title-container {
-        text-align: right;
 }

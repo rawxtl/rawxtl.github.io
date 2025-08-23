@@ -17,9 +17,15 @@
                         href="/assets/css/global.css"
                         type="text/css"
                 />
+
+                <style>
+                        .lh {
+                                line-height: 1.5em;
+                        }
+                </style>
         </head>
         <body>
                 {% include nav.html %}
-                <main>{{content}}</main>
+                <main class="lh">{{content}}</main>
         </body>
 </html>

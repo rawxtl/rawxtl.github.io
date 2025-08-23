@@ -15,6 +15,10 @@ these are some artists i like listening to{% for artist in site.data.artists %},
 
 checkout my stuff from the links below or read my latest blog -- [{{ latest_blog.title }}]({{ latest_blog.url }})-->
 
+programmer / designer / artist, grew up watching code bullet and learned how to code,  
+wrote horrible java. started making art, learned art & design from college dropped out.  
+trying to make a movie and write more horrible code.
+
 {% include links.html %}
 
 <br/>
