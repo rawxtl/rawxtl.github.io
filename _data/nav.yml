@@ -1,14 +1,8 @@
-- name: home
+- name: index
   url: /
-
-- name: blogs
-  url: /blogs/
 
 - name: recommendations
   url: /recommendations/
 
 - name: gallery
   url: /gallery/
-
-- name: about
-  url: /about/

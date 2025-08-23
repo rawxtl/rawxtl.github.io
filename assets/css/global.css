@@ -5,68 +5,50 @@
         --sans-serif: "Inter", sans-serif;
         --mono-space: "Source Code Pro", monospace;
 
+        --background-clr: white;
+        --foreground-clr: black;
+        --hyperlink-clr: black;
+        --dim-clr: gray;
+
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        box-sizing: border-box;
+
+        font-size: 12px;
         font-feature-settings:
                 "calt",
                 "tnum",
                 "case",
                 "zero" 1;
         font-variant-numeric: slashed-zero;
-
-        --background-clr: black;
-        --foreground-clr: white;
-
-        --hyperlink-clr: white;
-        --dim-clr: gray;
-        box-sizing: border-box;
-
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
         text-rendering: geometricPrecision;
 
         scroll-behavior: smooth;
 }
 
 body {
-        margin: 24vh 0 20vh 0;
-        padding: 0;
-
+        margin-top: 4vh;
         background-color: var(--background-clr);
 }
 
 nav,
 main,
 header,
-footer {
-        margin-left: 4rem;
-        margin-right: 1rem;
+article {
+        margin-left: 1.4em;
+        margin-right: 1.4em;
 
         color: var(--foreground-clr);
 
         font-family: var(--sans-serif);
         font-weight: normal;
-        font-size: 1rem;
-
-        line-height: 1.3rem;
-        /*text-align: justify;*/
-        text-align: left;
-
-        max-width: 80ch;
 }
 
-nav {
-        text-align: right;
-}
-
-@media (width <= 70ch) {
-        main,
-        header,
-        footer {
-                text-align: left;
-        }
-
-        nav {
-                text-align: right;
-        }
+article {
+        margin: 0;
+        max-width: 48em;
+        line-height: 1.5;
 }
 
 li {
@@ -81,20 +63,15 @@ li p {
         margin: 0;
 }
 
-h5 {
-        font-size: 1rem;
+h1,
+h2,
+h3 {
+        font-size: 1.2em;
+        font-weight: 700;
 }
 
 code {
         font-family: var(--mono-space);
-        font-size: 0.9rem;
-        font-weight: 500;
-
-        color: gray;
-}
-
-.highlight code {
-        color: var(--foreground-clr);
 }
 
 a {
@@ -127,9 +104,8 @@ img {
 }
 
 hr {
-        border: none;
-        height: 1px;
-        background-color: var(--dim-clr);
+        border: 1px solid var(--foreground-clr);
+        border-bottom: 0px;
 }
 
 blockquote {

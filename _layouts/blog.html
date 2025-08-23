@@ -19,22 +19,18 @@
                 />
         </head>
         <body>
+                {% include nav.html %}
                 <header>
-                        <div class="blog-title-container">
-                                <h2>{{ page.title}}</h2>
-                        </div>
-                        <p>tl;dr -- <span class="dim">{{ page.tldr }}</span></p>
-
                         {% assign date = page.date | date: "%d-%b-%Y" %}
-                        <p class="dim">
-                                <span class="gap"> date: {{ date }} </span>
-                                <span class="gap">
-                                        by: {{ page.credits }}
-                                </span>
-                        </p>
-                        <hr />
+                        <div class="blog-title-container">
+                                <h2>
+                                        <span class="gap dim">{{date}}</span>
+                                        / {{page.title}}
+                                </h2>
+                        </div>
                 </header>
-                <main>{{content}}</main>
-                {% include nav.html %} {% include footer.html %}
+                <main>
+                        <article>{{content}}</article>
+                </main>
         </body>
 </html>

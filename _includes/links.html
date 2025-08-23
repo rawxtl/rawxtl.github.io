@@ -1,0 +1,19 @@
+{% if page.exurl != null %}
+<p><strong>LINKS</strong></p>
+<ul>
+        {% for link in page.exurl %}
+        <li>
+                <a href="{{link | relative_url}}"> {{ link }}</a>
+        </li>
+        {% endfor %}
+</ul>
+{% endif %}
+
+<p><strong>SOCIALS</strong></p>
+<ul>
+        {% for link in site.data.socials %}
+        <li>
+                <a href="{{link.url | relative_url}}"> {{ link.name }} </a>
+        </li>
+        {% endfor %}
+</ul>

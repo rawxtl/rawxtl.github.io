@@ -1,17 +1,14 @@
+- name: are.na
+  url: https://www.are.na/raw-xtl-mxacp8espqs
+
+- name: x.com
+  url: https://x.com/rawxtl
+
 - name: github
   url: https://www.github.com/rawxtl
 
 - name: instagram
   url: https://www.instagram.com/edwn.raww
 
-- name: are.na
-  url: https://www.are.na/raw-xtl-mxacp8espqs
-
-- name: threads
-  url: https://www.threads.com/@edwn.raww
-
-- name: bluesky
-  url: https://bsky.app/profile/rawxtl.bsky.social
-
-- name: x
-  url: https://x.com/rawxtl
+- name: rawxtl@outlook.com
+  url: mailto:rawxtl@outlook.com

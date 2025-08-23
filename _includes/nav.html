@@ -1,9 +1,6 @@
 <nav>
-        <hr />
-        <br />
-        <!-- <h5> -->
         {% for link in site.data.nav %}
-        <a href="{{ link.url }}" class="gap">{{link.name}}</a>
+        <a href="{{ link.url }}" class="gap">~/{{link.name}}</a>
         {% endfor %}
-        <!-- </h5> -->
+        <hr />
 </nav>
