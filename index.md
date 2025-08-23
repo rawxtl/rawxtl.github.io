@@ -44,9 +44,9 @@ a movie
 {% endif %}
 {% endfor %}
 
-**Biblica**  
+**Ethos**  
 {% for post in site.posts %}
-{% if post.category == "biblica" %}
+{% if post.category == "ethos" %}
 {% assign date = post.date | date: "%d-%b-%Y" %}
 
  - {{ date }} / [{{ post.title }}]({{ post.url }})

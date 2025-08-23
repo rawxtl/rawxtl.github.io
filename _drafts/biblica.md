@@ -1,5 +1,5 @@
 ---
 layout: blog
 title: Biblica Test
-category: biblica
+category: ethos
 ---
