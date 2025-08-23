@@ -1,8 +1,7 @@
 ---
 layout: blog
 title: Style Test
-tldr: >- 
- nothing to read
+category: programming
 ---
 
 It's hard to write these examples without sounding like I'm bragging, but to be very clear - I don't think that these projects are particularly impressive in context. They are the kind of projects that someone with a decade of experience in a specialized area should be capable of.

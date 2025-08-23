@@ -4,27 +4,52 @@ layout: default
 permalink: /
 ---
 
-<!--i'm edwin dileep, programmer / designer / photographer.  
-makes art, random programming projects and takes pictures. i did art & design for my college, learned to do ceramics, pattern making, textiles, animation and sculpting. most of the time i work on random programs drink [redbull](https://www.redbull.com) sleep and repeat.  
-
-my passion right now is to learn about film and make a good contribution. film is an influential and powerful medium of communication, and so wish to make one. hopefully inspiring or helpful to others.
-
-
-{% assign latest_blog = site.posts | first %}
-these are some artists i like listening to{% for artist in site.data.artists %}, [{{artist.name}}]({{artist.url}}){% endfor %}   
-
-checkout my stuff from the links below or read my latest blog -- [{{ latest_blog.title }}]({{ latest_blog.url }})-->
-
-programmer / designer / artist, grew up watching code bullet and learned how to code,  
-wrote horrible java. started making art, learned art & design from college dropped out.  
-trying to make a movie and write more horrible code.
+programmer / designer / artist, grew up watching code bullet and learned how to code.
+started making art then learned art & design from college, dropped out. now trying to make 
+a movie
 
 {% include links.html %}
 
 <br/>
 
-**BLOG POSTS**
+**BLOG POSTS**  
+
+**Programming**  
 {% for post in site.posts %}
+{% if post.category == "programming" %}
 {% assign date = post.date | date: "%d-%b-%Y" %}
+
  - {{ date }} / [{{ post.title }}]({{ post.url }})
+ 
+{% endif %}
+{% endfor %}
+
+**Art / Media**  
+{% for post in site.posts %}
+{% if post.category == "arts" %}
+{% assign date = post.date | date: "%d-%b-%Y" %}
+
+ - {{ date }} / [{{ post.title }}]({{ post.url }})
+ 
+{% endif %}
+{% endfor %}
+
+**Humanities**  
+{% for post in site.posts %}
+{% if post.category == "humanities" %}
+{% assign date = post.date | date: "%d-%b-%Y" %}
+
+ - {{ date }} / [{{ post.title }}]({{ post.url }})
+ 
+{% endif %}
+{% endfor %}
+
+**Biblica**  
+{% for post in site.posts %}
+{% if post.category == "biblica" %}
+{% assign date = post.date | date: "%d-%b-%Y" %}
+
+ - {{ date }} / [{{ post.title }}]({{ post.url }})
+ 
+{% endif %}
 {% endfor %}
