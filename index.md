@@ -4,9 +4,7 @@ layout: default
 permalink: /
 ---
 
-programmer / designer / artist, grew up watching code bullet and learned how to code.
-started making art then learned art & design from college, dropped out. now trying to make 
-a movie
+Artis and Programmer, I go by the tag ```rawxtl``` online. Things I like to do are make art, shoot film/photos and program computers
 
 {% include links.html %}
 
